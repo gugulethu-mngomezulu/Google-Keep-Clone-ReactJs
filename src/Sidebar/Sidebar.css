@@ -1,0 +1,63 @@
+/* SIDEBAR – collapsed initially */
+.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    height: calc(100vh - 64px);
+    width: 60px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8px;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+    z-index: 100;
+  }
+  
+  /* Expand sidebar on hover */
+  .sidebar:hover {
+    width: 280px;
+  }
+  
+  /* SIDEBAR ITEM */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 0 24px 24px 0;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #fef0c3;
+    border: 1px solid transparent;
+    border-radius: 0 25px 25px 0;
+    
+  }
+  
+  .sidebar-item .material-symbols-outlined {
+    font-size: 24px;
+    color: #5f6368;
+    transition: color 0.2s ease;
+  }
+  
+  /* TEXT SLIDES IN */
+  .sidebar-text {
+    margin-left: 20px;
+    font-size: 0.95rem;
+    color: #3c4043;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* SHOW TEXT WHEN SIDEBAR IS EXPANDED */
+  .sidebar:hover .sidebar-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  

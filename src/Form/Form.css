@@ -1,0 +1,89 @@
+/* MAIN FORM */
+.form-container {
+  background: #fff;
+  max-width: 598px;
+  margin: 32px auto;
+  border: 1px solid #e0e1e0;
+  box-shadow: 0 1px 2px rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Form Layout */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  color: #5f6368;
+  box-sizing: border-box;
+}
+
+/* Inputs */
+.note-title,
+.note-text {
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 8px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.note-text {
+  min-height: 50px;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Icon Group */
+.form-actions .icons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Icons */
+.small-icon {
+  color: #5f6368;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.small-icon:hover {
+  background-color: #f1f3f4;
+}
+
+/* Yellow Add/Close Button */
+.submit-btn  {
+  background-color: #fbbc04; /* Google Keep yellow */
+  border: none;
+  color: #202124;
+  font-weight: 500;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e0a800;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
